@@ -1,0 +1,58 @@
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/nav.css";
+
+/* Screens */
+@import "screens/preview.css";
+@import "screens/login.css";
+@import "screens/main.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+@font-face {
+  font-family: "gothic100";
+  src: url("../fonts/210_010.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gullim200";
+  src: url("../fonts/210_020-_1_.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gothic200";
+  src: url("../fonts/210_020.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gullim300";
+  src: url("../fonts/210_030-_1_.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gothic300";
+  src: url("../fonts/210_030.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gullim400";
+  src: url("../fonts/210_040-_1_.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gothic400";
+  src: url("../fonts/210_040.woff") format("woff");
+}
+
+@font-face {
+  font-family: "jalnan";
+  src: url("../fonts/AnyConv.com__Jalnan.woff") format("woff");
+}
+
+body {
+  height: 150vh;
+  background-color: var(--violet);
+  color: white;
+  font-family: "gullim200";
+}

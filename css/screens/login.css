@@ -1,0 +1,98 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.login__img img {
+  width: 150px;
+  height: 150px;
+}
+
+.login-title {
+  display: flex;
+}
+
+.login-title__1 {
+  font-size: 40px;
+  font-family: "gullim400";
+}
+
+.login-title__2 {
+  font-size: 35px;
+  font-family: "gullim400";
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.login-detail {
+  font-size: 15px;
+  font-family: "gullim200";
+  margin-top: 20px;
+}
+
+.login-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input:not([type="submit"]) {
+  width: 360px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 10px 0px;
+  border-style: none;
+  font-family: "gullim400";
+
+  padding: 0px 23px;
+}
+
+.login-form input::placeholder {
+  font-size: 15px;
+}
+
+.login-form input[type="submit"] {
+  width: 400px;
+  height: 60px;
+  border-radius: 15px;
+  border-style: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "gullim400";
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background-color: #ffab4c;
+}
+
+.login-form div {
+  width: 400px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration-line: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #ff5959;
+  color: white;
+}
+
+.login-form a {
+  text-decoration-line: none;
+  color: black;
+  font-size: 20px;
+  font-family: "gullim400";
+  font-weight: 600;
+}
+
+.login-form input,
+.login-form div {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 10px;
+}
