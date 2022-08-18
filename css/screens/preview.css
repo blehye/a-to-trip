@@ -6,8 +6,8 @@
 }
 
 .preview__img img {
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
 }
 
 .priview-title {
@@ -15,25 +15,25 @@
 }
 
 .preview-title__1 {
-  font-size: 50px;
+  font-size: 40px;
   font-family: "gullim400";
 }
 
 .preview-title__2 {
-  font-size: 45px;
+  font-size: 34px;
   font-family: "gullim400";
   font-weight: 500;
   margin-top: 17px;
 }
 
 .preview-detail {
-  font-size: 20px;
+  font-size: 17px;
   font-family: "gullim200";
   margin-top: 20px;
 }
 
 .click-to-login {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 170px;
   font-family: "gullim300";
   /* 색깔 무지개 효과 폰트크기 커졌다작아졌다 */

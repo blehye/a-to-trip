@@ -51,7 +51,8 @@
 }
 
 body {
-  height: 150vh;
+  height: 320vh;
+  width: 100%;
   background-color: var(--violet);
   color: white;
   font-family: "gullim200";

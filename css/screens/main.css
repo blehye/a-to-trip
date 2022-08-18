@@ -28,7 +28,9 @@
 }
 
 .wrapper {
+  width: 100%;
   margin-top: 20px;
+  padding-bottom: 50px;
   background-color: white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -36,7 +38,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .main-nav {
@@ -66,19 +67,34 @@
   margin-bottom: 30px;
 }
 
+/* 이게 맞나??? */
+.main-ad {
+  width: 100%;
+}
+
+.main-ad__img {
+  display: flex;
+  overflow-x: auto;
+}
+
+.main-ad__img::-webkit-scrollbar {
+  display: none;
+}
+
 .main-ad__img img {
-  width: 483px;
+  width: 100%;
 }
 
 .event-nav {
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
 .event-nav__data {
-  background-color: rgb(200, 200, 200);
+  background-color: #f1f3f4;
   width: 140px;
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,11 +105,12 @@
 
 .event-nav__data span {
   margin-left: 7px;
-  margin-top: 2px;
+  margin-top: 0px;
   margin-right: 5px;
   color: black;
-  font-family: "gullim400";
-  font-size: 16px;
+  font-family: "jalnan";
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .today-discount {
@@ -102,6 +119,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .today-discount__title span {
@@ -113,7 +131,7 @@
 
 .today-discount__title {
   position: absolute;
-  left: 10px;
+  left: 0px;
 }
 
 .today-discount__title span:first-child {
@@ -166,21 +184,132 @@
   border: 1px lightblue solid;
   border-radius: 20px;
   color: blue;
-  width: 150px;
-  height: 30px;
+  width: 160px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: gothic300;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 60px;
+}
+
+.view-more span {
+  margin-top: 5px;
 }
 
 .view-more span:first-child {
   margin-right: 5px;
+  margin-left: 3px;
 }
 
 .view-more span:nth-child(2) {
   margin-right: 5px;
   color: rgb(81, 81, 238);
+}
+
+.recommend-travel {
+  background-color: #f1f3f4;
+  padding: 10px 0px;
+}
+
+.recommend-travel__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  margin-right: 30px;
+}
+
+.recommend-travel__data img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.recommend-travel {
+  width: 100%;
+}
+.recommend-travel__list {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-left: 20px;
+  height: 100px;
+}
+
+.recommend-travel__list::-webkit-scrollbar {
+  display: none;
+}
+
+.recommend-travel__title {
+  position: absolute;
+  left: 20px;
+}
+.recommend-travel__data-detail-title {
+  color: black;
+}
+.restaurant__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.restaurant__data {
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  width: 45%;
+  height: 200px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.restaurant__data img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 80%;
+}
+.restaurant__data-detail-title {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant__title {
+  margin-left: 10px;
+}
+
+footer {
+  background-color: white;
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+
+.footer-title {
+  margin-bottom: 15px;
+}
+
+.footer-title span:first-child {
+  color: gray;
+  font-weight: 600;
+  font-family: gullim400;
+}
+
+.footer-title span:last-child {
+  color: gray;
+}
+.footer-detail span:first-child {
+  color: gray;
+  font-size: 13px;
+  font-family: gothic100;
+  font-weight: 900;
+  line-height: 20px;
+}
+.footer-detail span:last-child {
+  color: gray;
+  font-size: 11px;
+  font-family: gothic200;
+  font-weight: 300;
 }
