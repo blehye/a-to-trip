@@ -20,65 +20,73 @@
     </header>
 
     <main class="wrapper">
+      <div class="main-nav__row" id="main-nav">
+        <div class="main-nav__data">
+          <i class="fa-solid fa-bed"></i>
+          <span>모텔</span>
+        </div>
+        <div class="main-nav__data">
+          <i class="fa-solid fa-hotel"></i>
+          <span>호텔·리조트</span>
+        </div>
+        <div class="main-nav__data">
+          <i class="fa-solid fa-umbrella-beach"></i>
+          <span>펜션·풀빌라</span>
+        </div>
+        <div class="main-nav__data">
+          <i class="fa-solid fa-building"></i>
+          <span>홈·빌라</span>
+        </div>
+      </div>
       <nav class="main-nav">
-        <table>
-          <tr class="main-nav__row">
-            <th class="main-nav__data">
-              <i class="fa-solid fa-bed"></i>
-              <span>모텔</span>
-            </th>
-            <th class="main-nav__data">
-              <i class="fa-solid fa-hotel"></i>
-              <span>호텔·리조트</span>
-            </td>
-            <th class="main-nav__data">
-              <i class="fa-solid fa-umbrella-beach"></i>
-              <span>펜션·풀빌라</span>
-            </th>
-            <th class="main-nav__data">
-              <i class="fa-solid fa-building"></i>
-              <span>홈·빌라</span>
-            </th>
-          </tr>
-          <tr class="main-nav__row">
-            <th class="main-nav__data">
+        
+          
+          <div class="main-nav__row ">
+            <div class="main-nav__data">
               <i class="fa-solid fa-campground"></i>
               <span>캠핑·글램핑</span>
-            </th>
-            <th class="main-nav__data">
+            </div>
+            <div class="main-nav__data">
               <i class="fa-solid fa-house-chimney-user"></i
               ><span>게하·한옥</span>
-            </th>
-            <th class="main-nav__data">
+            </div>
+            <div class="main-nav__data">
               <i class="fa-solid fa-champagne-glasses"></i><span>공간대여</span>
-            </th>
-            <th class="main-nav__data">
+            </div>
+            <div class="main-nav__data">
               <i class="fa-solid fa-car"></i>
               <span>렌터카</span>
-            </th>
-          </tr>
-          <tr class="main-nav__row">
-            <th class="main-nav__data">
+            </div>
+          </div>
+          <div class="main-nav__row ">
+            <div class="main-nav__data">
               <i class="fa-solid fa-plane"></i><span>국내항공</span>
-            </th>
-            <th class="main-nav__data">
+            </div>
+            <div class="main-nav__data">
               <i class="fa-solid fa-earth-americas"></i><span>해외항공</span>
-            </th>
-            <th class="main-nav__data">
+            </div>
+            <div class="main-nav__data">
               <i class="fa-solid fa-house-flag"></i><span>해외숙소</span>
-            </th>
-            <th class="main-nav__data">
+            </div>
+            <div class="main-nav__data">
               <i class="fa-solid fa-cable-car"></i><span>레저·티켓</span>
-            </th>
-          </tr>
-        </table>
+            </div>
+          </div>
+        
       </nav>
 
       <section class="main-ad">
-        <div class="main-ad__img">
-          <img src="./images/ad1.jpg" alt="">
-          <img src="./images/pumjil.png" alt="">
-          <img src="./images/mpoint.jpg" alt="">
+        <div class="main-ad__list">
+          <div class="main-ad__list-detail">
+            <img src="./images/ad1.jpg" alt="">
+          </div>
+
+          <div class="main-ad__list-detail">
+            <img src="./images/pumjil.png" alt="">
+          </div>
+          <div class="main-ad__list-detail">
+            <img src="./images/mpoint.jpg" alt="">
+          </div>
         </div>
 
       </section>
@@ -90,7 +98,7 @@
         </div>
         <div class="event-nav__data">
           <i class="fa-solid fa-circle-dollar-to-slot"></i>
-          <span>도전룰렛</span>
+          <span>커뮤니티</span>
         </div>
         <div class="event-nav__data">
           <i class="fa-solid fa-gift"></i>
@@ -98,18 +106,29 @@
         </div>
       </nav>
 
-      <section class="main-ad2">
-        <div class="main-ad2__img">
-          <i class="fa-solid fa-bell "></i>
+      <section class="main-ad">
+        <div class="main-ad__list">
+          <div class="main-ad__list-detail">
+            <img src="./images/airbnb.png" alt="">
+          </div>
+          <div class="main-ad__list-detail" id="ad-bell">
+            <div class="main-ad2__img" id="ad-bell__img">
+              <i class="fa-solid fa-bell "></i>
+            </div>
+            <div class="main-ad2__title" id="ad-bell__title">
+              <span>쿠폰 & 특가 상품</span>
+              <span>가장 빨리 만나는 법!</span>
+            </div>
+            <div class="main-ad2__detail" id="ad-bell__detail">
+              <span>혜택 알림 ON 하기</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+
         </div>
-        <div class="main-ad2__title">
-          <span>쿠폰 & 특가 상품</span>
-          <span>가장 빨리 만나는 법!</span>
-        </div>
-        <div class="main-ad2__detail">
-          <span>혜택 알림 ON 하기</span>
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
+        
+        
+        
 
       </section>
       <section class="today-discount">
@@ -123,7 +142,7 @@
             <img src="./images/discount1.jpg" alt="">
             <div class="today-discount__data-detail">
               <div class="today-discount__data-detail-title">
-                스타즈호텔 프리미어 동탄
+                [반짝특가] 스타즈호텔 프리미어 동탄
               </div>
               <div class="today-discount__data-detail-info">
                 타임테라스 도보 5분
@@ -137,13 +156,47 @@
 
           </li>
           <li class="today-discount__data">
-            <img src="./images/discount2.jpg" alt="">
+            <img src="./images/discount1.jpg" alt="">
             <div class="today-discount__data-detail">
               <div class="today-discount__data-detail-title">
-                신라스테이 해운대
+                [반짝특가] 스타즈호텔 프리미어 동탄
               </div>
               <div class="today-discount__data-detail-info">
-                해운대해수욕장 도보 2분
+                타임테라스 도보 5분
+              </div>
+              <div class="today-discount__data-detail-price">
+                <span>155,000</span>
+                <span>원</span>
+              </div>
+
+            </div>
+
+          </li>
+          <li class="today-discount__data">
+            <img src="./images/discount1.jpg" alt="">
+            <div class="today-discount__data-detail">
+              <div class="today-discount__data-detail-title">
+                [반짝특가] 스타즈호텔 프리미어 동탄
+              </div>
+              <div class="today-discount__data-detail-info">
+                타임테라스 도보 5분
+              </div>
+              <div class="today-discount__data-detail-price">
+                <span>155,000</span>
+                <span>원</span>
+              </div>
+
+            </div>
+
+          </li>
+          <li class="today-discount__data">
+            <img src="./images/discount1.jpg" alt="">
+            <div class="today-discount__data-detail">
+              <div class="today-discount__data-detail-title">
+                [반짝특가] 스타즈호텔 프리미어 동탄
+              </div>
+              <div class="today-discount__data-detail-info">
+                타임테라스 도보 5분
               </div>
               <div class="today-discount__data-detail-price">
                 <span>155,000</span>
@@ -205,6 +258,91 @@
             </div>
 
           </li>
+          <li class="today-discount__data">
+            <img src="./images/discount1.jpg" alt="">
+            <div class="today-discount__data-detail">
+              <div class="today-discount__data-detail-title">
+                포항 190워터프런트 풀빌라
+              </div>
+              <div class="today-discount__data-detail-info">
+                9.2(39) 도암사 차량 18분
+              </div>
+              <div class="today-discount__data-detail-price">
+                <span>98,700</span>
+                <span>원</span>
+              </div>
+
+            </div>
+
+          </li>
+          <li class="today-discount__data">
+            <img src="./images/discount1.jpg" alt="">
+            <div class="today-discount__data-detail">
+              <div class="today-discount__data-detail-title">
+                포항 190워터프런트 풀빌라
+              </div>
+              <div class="today-discount__data-detail-info">
+                9.2(39) 도암사 차량 18분
+              </div>
+              <div class="today-discount__data-detail-price">
+                <span>98,700</span>
+                <span>원</span>
+              </div>
+
+            </div>
+
+          </li>
+          <li class="today-discount__data">
+            <img src="./images/discount1.jpg" alt="">
+            <div class="today-discount__data-detail">
+              <div class="today-discount__data-detail-title">
+                포항 190워터프런트 풀빌라
+              </div>
+              <div class="today-discount__data-detail-info">
+                9.2(39) 도암사 차량 18분
+              </div>
+              <div class="today-discount__data-detail-price">
+                <span>98,700</span>
+                <span>원</span>
+              </div>
+
+            </div>
+
+          </li>
+          <li class="today-discount__data">
+            <img src="./images/discount1.jpg" alt="">
+            <div class="today-discount__data-detail">
+              <div class="today-discount__data-detail-title">
+                포항 190워터프런트 풀빌라
+              </div>
+              <div class="today-discount__data-detail-info">
+                9.2(39) 도암사 차량 18분
+              </div>
+              <div class="today-discount__data-detail-price">
+                <span>98,700</span>
+                <span>원</span>
+              </div>
+
+            </div>
+
+          </li>
+          <li class="today-discount__data">
+            <img src="./images/discount1.jpg" alt="">
+            <div class="today-discount__data-detail">
+              <div class="today-discount__data-detail-title">
+                포항 190워터프런트 풀빌라
+              </div>
+              <div class="today-discount__data-detail-info">
+                9.2(39) 도암사 차량 18분
+              </div>
+              <div class="today-discount__data-detail-price">
+                <span>98,700</span>
+                <span>원</span>
+              </div>
+
+            </div>
+
+          </li>
 
 
         </ul>
@@ -248,7 +386,7 @@
             <img src="./images/discount2.jpg" alt="">
             <div class="recommend-travel__data-detail">
               <div class="recommend-travel__data-detail-title">
-                물놀이 숙소
+                강원여행
               </div>
              
 
@@ -259,7 +397,7 @@
             <img src="./images/discount2.jpg" alt="">
             <div class="recommend-travel__data-detail">
               <div class="recommend-travel__data-detail-title">
-                물놀이 숙소
+                제주여행
               </div>
              
 
@@ -270,7 +408,7 @@
             <img src="./images/discount2.jpg" alt="">
             <div class="recommend-travel__data-detail">
               <div class="recommend-travel__data-detail-title">
-                물놀이 숙소
+                경주여행
               </div>
           
             </div>
@@ -279,7 +417,7 @@
             <img src="./images/discount2.jpg" alt="">
             <div class="recommend-travel__data-detail">
               <div class="recommend-travel__data-detail-title">
-                물놀이 숙소
+                반려견이랑
               </div>
             </div>
           </li>
@@ -287,7 +425,7 @@
             <img src="./images/discount2.jpg" alt="">
             <div class="recommend-travel__data-detail">
               <div class="recommend-travel__data-detail-title">
-                물놀이 숙소
+                해외여행
               </div>
             </div>
           </li>

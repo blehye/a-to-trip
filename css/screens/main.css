@@ -1,11 +1,14 @@
 .main-header {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
+  margin-right: 10px;
+  width: 100%;
 }
 
 .main-header__img img {
-  width: 50px;
+  width: 45px;
 }
 
 .main-header-title {
@@ -15,15 +18,15 @@
 }
 
 .main-header-title__1 {
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 900;
   font-family: "gullim400";
 }
 
 .main-header-title__2 {
   font-size: 30px;
-  margin-top: 10px;
-  font-weight: 900;
+  margin-top: 17px;
+  font-weight: 500;
   font-family: "gullim400";
 }
 
@@ -41,7 +44,11 @@
 }
 
 .main-nav {
-  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-nav__data {
@@ -49,6 +56,8 @@
   flex-direction: column;
   width: 100px;
   height: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-nav__data i {
@@ -64,79 +73,109 @@
 
 .main-nav__row {
   display: flex;
-  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgba(211, 215, 220, 0.523);
+}
+
+#main-nav {
+  position: sticky;
+  top: 0px;
+  z-index: 2000;
+  padding-top: 20px;
 }
 
 /* 이게 맞나??? */
 .main-ad {
   width: 100%;
+  height: 180px;
 }
 
-.main-ad__img {
+.main-ad__list {
+  overflow-x: scroll;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.main-ad__list-detail {
+  width: 100%;
+  height: 100%;
+
   display: flex;
-  overflow-x: auto;
 }
 
-.main-ad__img::-webkit-scrollbar {
+.main-ad__list::-webkit-scrollbar {
   display: none;
 }
 
-.main-ad__img img {
+.main-ad__list-detail img {
   width: 100%;
+  height: 180px;
+  white-space: nowrap;
 }
 
-.main-ad2 {
+#ad-bell {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f8f9fa;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-.main-ad2__img {
+#ad-bell__img {
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-ad2__img i {
+
+#ad-bell__img img {
+  width: 100%;
+  height: 100%;
+}
+#ad-bell__img i {
   font-size: 55px;
   color: rgb(230, 160, 38);
 }
 
-.main-ad2__title {
+#ad-bell__title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.main-ad2__title span:first-child {
+#ad-bell__title span:first-child {
   font-size: 20px;
   color: tomato;
   font-family: gothic400;
   margin-bottom: 8px;
 }
 
-.main-ad2__title span:last-child {
+#ad-bell__title span:last-child {
   font-size: 20px;
   color: black;
   font-family: gothic400;
 }
 
-.main-ad2__detail span {
+#ad-bell__detail span {
   font-size: 13px;
   color: gray;
   font-family: gothic300;
 }
-.main-ad2__detail {
+#ad-bell__detail {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
-.main-ad2__detail i {
+#ad-bell__detail i {
   font-size: 13px;
   color: gray;
 }
@@ -145,6 +184,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .event-nav__data {
@@ -170,16 +210,18 @@
 }
 
 .today-discount {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  width: 90%;
 }
 
 .today-discount__title span {
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   font-weight: 600;
   font-family: "jalnan";
@@ -195,15 +237,25 @@
 }
 
 .today-discount__list {
-  display: flex;
   margin-top: 30px;
+  overflow-x: auto;
+
+  height: 255px;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+}
+
+.today-discount__list::-webkit-scrollbar {
+  display: none;
 }
 
 .today-discount__data {
   background-color: white;
   border-radius: 10px;
-  box-shadow: gray 0 0 3px;
+  box-shadow: rgba(128, 128, 128, 0.348) 0 0 3px;
   margin-right: 10px;
+  width: 200px;
 }
 
 .today-discount__data img {
@@ -214,9 +266,15 @@
 }
 
 .today-discount__data-detail div:first-child {
+  line-height: 20px;
+  height: 20px;
+  width: 90%;
   color: black;
   font-family: gothic300;
   margin-bottom: 7px;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
 }
 
 .today-discount__data-detail div:nth-child(2) {
@@ -247,7 +305,7 @@
   align-items: center;
   font-family: gothic300;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 }
 
 .view-more span {
@@ -266,7 +324,8 @@
 
 .recommend-travel {
   background-color: #f1f3f4;
-  padding: 10px 0px;
+  padding: 20px 0px;
+  margin-top: 10px;
 }
 
 .recommend-travel__data {
@@ -290,8 +349,9 @@
 .recommend-travel__list {
   overflow-x: auto;
   white-space: nowrap;
-  padding-left: 20px;
+  padding-left: 30px;
   height: 100px;
+  width: 90%;
 }
 
 .recommend-travel__list::-webkit-scrollbar {
