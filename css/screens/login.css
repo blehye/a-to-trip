@@ -50,6 +50,10 @@
   padding: 0px 23px;
 }
 
+.login-form input:not([type="submit"]):focus {
+  outline: none;
+}
+
 .login-form input::placeholder {
   font-size: 15px;
 }

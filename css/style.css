@@ -9,6 +9,7 @@
 @import "screens/login.css";
 @import "screens/main.css";
 @import "screens/search.css";
+@import "screens/zzim.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 @font-face {

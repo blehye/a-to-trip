@@ -1,11 +1,20 @@
 .nav__list {
   display: flex;
   justify-content: space-between;
+  padding-top: 5px;
+  border-top: 1px solid rgba(185, 182, 182, 0.5);
 }
 
 .nav__btn a i {
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 8px;
+}
+.nav__btn a:hover {
+  color: var(--violet);
+}
+
+.nav__btn a span {
+  font-size: 15px;
 }
 
 .nav__link {
@@ -13,13 +22,13 @@
   flex-direction: column;
   align-items: center;
   text-decoration-line: none;
-  color: gray;
+  color: rgb(157, 156, 156);
   padding: 5px 15px;
 }
 
 .nav {
   background-color: white;
-  padding: 5px 0px;
+
   position: fixed;
   bottom: 0px;
   width: 100%;
