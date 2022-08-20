@@ -184,19 +184,20 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin: 20px 10px;
 }
 
 .event-nav__data {
   background-color: #f1f3f4;
-  width: 140px;
+  width: 130px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 5px 0px 5px;
+
   border-radius: 5px;
   color: goldenrod;
+  margin: 0px 5px;
 }
 
 .event-nav__data span {
@@ -210,7 +211,6 @@
 }
 
 .today-discount {
-  margin-left: 20px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -253,7 +253,8 @@
 .today-discount__data {
   background-color: white;
   border-radius: 10px;
-  box-shadow: rgba(128, 128, 128, 0.348) 0 0 3px;
+  /* box-shadow: rgba(128, 128, 128, 0.348) 0 0 3px; */
+  border: 1px solid rgba(197, 197, 197, 0.353);
   margin-right: 10px;
   width: 200px;
 }
@@ -360,7 +361,7 @@
 
 .recommend-travel__title {
   position: absolute;
-  left: 20px;
+  left: 22px;
 }
 .recommend-travel__data-detail-title {
   color: black;
@@ -368,16 +369,16 @@
 .restaurant__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 30px;
 }
 
 .restaurant__data {
   border-radius: 20px;
   background-color: #f8f9fa;
-  width: 45%;
+  width: 49%;
   height: 200px;
-  margin-right: 10px;
+
   margin-top: 6px;
 }
 
@@ -392,9 +393,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.restaurant__title {
-  margin-left: 10px;
 }
 
 footer {

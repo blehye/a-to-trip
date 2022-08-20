@@ -40,7 +40,7 @@
 }
 
 .login-form input:not([type="submit"]) {
-  width: 360px;
+  width: 80%;
   height: 50px;
   border-radius: 30px;
   margin: 10px 0px;
@@ -55,7 +55,7 @@
 }
 
 .login-form input[type="submit"] {
-  width: 400px;
+  width: 90%;
   height: 60px;
   border-radius: 15px;
   border-style: none;
@@ -70,7 +70,6 @@
 }
 
 .login-form div {
-  width: 400px;
   height: 60px;
   border-radius: 15px;
   background-color: white;
@@ -84,7 +83,12 @@
   color: white;
 }
 
+.sign-up {
+  width: 90%;
+}
+
 .login-form a {
+  width: 100%;
   text-decoration-line: none;
   color: black;
   font-size: 20px;
