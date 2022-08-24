@@ -40,7 +40,7 @@
   padding: 5px 10px;
 }
 .zzim-main {
-  background-color: rgb(223, 219, 219);
+  background-color: #f1f3f4;
   padding: 0px 15px;
   padding-top: 7px;
   padding-bottom: 200px;
@@ -119,4 +119,14 @@
   font-size: 12px;
   font-family: gothic300;
   margin-right: 5px;
+}
+
+.zzim-footer {
+  background-color: #f1f3f4;
+  display: flex;
+  justify-content: center;
+}
+
+.zzim-footer img {
+  width: 30%;
 }

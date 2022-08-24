@@ -11,6 +11,7 @@
 @import "screens/search.css";
 @import "screens/zzim.css";
 @import "screens/mypage.css";
+@import "screens/nearby.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 @font-face {
@@ -56,7 +57,7 @@
 body {
   height: 334vh;
   width: 100%;
-  background-color: var(--violet);
-  color: white;
+  background-color: white;
+  color: black;
   font-family: "gullim200";
 }

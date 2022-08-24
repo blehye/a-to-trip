@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,27 +12,47 @@
     />
   </head>
   <body>
-    <header class="zzim-header">
-      <div>국내숙소</div>
-      <div>해외숙소</div>
-      <div>모바일티켓</div>
+    <header class="nearby-header">
+      <div class="nearby-search">
+        <div class="nearby-search-location">
+          <i class="fa-solid fa-map-location"></i>
+          <span>장소 검색</span>
+        </div>
+        <div class="nearby-search-date">
+          <i class="fa-regular fa-calendar"></i>
+          <span>08.24-08.25 2명</span>
+        </div>
+      </div>
+
+      <section class="nearby-type">
+        <label class="nearby-lodging" for="nearby-lodging"
+          ><i class="fa-solid fa-house"></i>숙소</label
+        >
+        <input id="nearby-lodging" type="checkbox" />
+
+        <span> <i class="fa-solid fa-cable-car"></i>레저/티켓</span>
+
+        <span> <i class="fa-solid fa-bowl-food"></i>맛집</span>
+        <span class="nearby-type-reset">선택초기화</span>
+
+        <nav id="nearby-search-nav">
+          <ul>
+            <li>필터</li>
+            <li>추천순</li>
+            <li>숙소유형</li>
+            <li>예약가능</li>
+            <li>가격</li>
+          </ul>
+        </nav>
+      </section>
     </header>
-    <section>
-      <form class="zzim-form" action="">
-        <input class="zzim-date" type="date" />
-        <select class="zzim-people" name="" id="">
-          <option value="">1명</option>
-          <option value="">2명</option>
-          <option value="">3명</option>
-          <option value="">4명</option>
-          <option value="">5명</option>
-          <option value="">6명</option>
-          <option value="">7명</option>
-          <option value="">8명</option>
-          <option value="">9명</option>
-          <option value="">10명</option>
-        </select>
-      </form>
+    <section class="nearby-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3079474102506!2d127.03136522064855!3d37.50065447217731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3fe39a5344d%3A0xe6679c695d833535!2z7Jet7IK87JetKDLtmLjshKAp!5e0!3m2!1sko!2skr!4v1661353296115!5m2!1sko!2skr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
     <main class="zzim-main">
       <ul class="zzim-list">
@@ -89,9 +109,7 @@
         </li>
       </ul>
     </main>
-    <footer class="zzim-footer">
-      <img src="./images/그림1.png" alt="" />
-    </footer>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">

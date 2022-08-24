@@ -42,6 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .main-nav {
@@ -88,9 +89,42 @@
   position: sticky;
   top: 0px;
   z-index: 2000;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
+#main-nav > div {
+  display: flex;
+}
+
+.main-nav-hidden {
+  display: none;
+  position: sticky;
+  top: 80px;
+  z-index: 5000;
+}
+
+#main-nav :hover ~ nav.main-nav-hidden {
+  display: block;
+}
+
+/* .main-nav-more :checked + .main-nav-hidden {
+  display: block;
+} */
+
+.main-nav-hidden:hover {
+  display: block;
+}
+
+#main-nav-more {
+  /* display: none;  */
+}
+.main-nav-hidden {
+  position: absolute;
+  top: 85px;
+  /* right: 50px; */
+
+  z-index: 5000;
+}
 /* 이게 맞나??? */
 .main-ad {
   width: 100%;

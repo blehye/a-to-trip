@@ -33,6 +33,7 @@
 }
 
 .user-img {
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +42,7 @@
 
 .user-img i:first-child {
   width: 65px;
-  font-size: 60px;
+  font-size: 70px;
   color: rgb(255, 145, 0);
 }
 
@@ -53,8 +54,8 @@
   padding: 4px;
   box-shadow: 0 0 5px gray;
   position: absolute;
-  right: 0px;
-  bottom: 20px;
+  right: 25px;
+  bottom: 17px;
 }
 
 .point-coupon {
@@ -71,7 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 43%;
+  width: 50%;
   height: 100%;
   text-decoration: none;
   color: gray;
@@ -117,19 +118,52 @@
   color: rgb(23, 216, 16);
 }
 .mypage-main {
-  color: black;
-  font-family: gothic300;
-  background-color: white;
-  padding: 20px 20px;
-  height: 500px;
+  height: 330px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 20px -12px inset;
   padding-top: 40px;
 }
 
-.mypage-main > h3 {
+.mypage-main,
+.mypage-qna,
+.mypage-etc {
+  color: black;
+  font-family: gothic300;
+  background-color: white;
+  padding: 20px 20px;
+}
+
+.mypage-main > h3,
+.mypage-qna > h3 {
+  font-size: 20px;
   font-family: gothic400;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .mypage-list li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.mypage-list li > i {
+  color: darkgray;
+}
+
+.mypage-hr {
+  color: gray;
+}
+
+.mypage-info {
+  position: relative;
+}
+
+.red-point {
+  width: 4px;
+  height: 4px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 85px;
+  bottom: 55px;
+}
+.mypage-body {
+  height: 145vh;
 }
