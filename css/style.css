@@ -14,6 +14,7 @@
 @import "screens/nearby.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
 @font-face {
   font-family: "gothic100";
   src: url("../fonts/210_010.woff") format("woff");
@@ -59,5 +60,6 @@ body {
   width: 100%;
   background-color: white;
   color: black;
-  font-family: "gullim200";
+  font-family: "gothic300";
+  /* font-family: "Gothic A1", sans-serif; */
 }

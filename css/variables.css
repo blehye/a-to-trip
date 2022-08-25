@@ -1,4 +1,6 @@
 :root {
-  --violet: hsl(257, 40%, 49%);
+  /* --violet: hsl(257, 40%, 49%); */
+  --violet: #645bff;
   --soft-magenta: hsl(300, 69%, 71%);
+  --border: rgba(128, 128, 128, 0.2);
 }
