@@ -1,5 +1,16 @@
+html {
+  scroll-behavior: smooth;
+  /* 맨위로 버튼 부드럽게 스크롤 */
+}
 .main-body {
   background-color: #f2f2f2;
+  height: 556vh;
+}
+
+.main-container {
+  width: 770px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* main-header */
@@ -1051,6 +1062,227 @@
   text-align: end;
 }
 
+/* main-overview */
+
+.main-overview-wrap {
+  height: 373px;
+  padding: 20px;
+}
+.main-overview-list a {
+  width: 730px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-overview-list li:nth-child(-n + 3) {
+  width: 730px;
+  height: 75px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+}
+.main-overview-list__data {
+  display: flex;
+  align-items: center;
+}
+.main-overview-list__img {
+  width: 55px;
+  height: 55px;
+  background-color: #f3fafd;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.main-title {
+  margin-bottom: 20px;
+}
+.main-overview-list__img img {
+  width: 36px;
+  height: 35px;
+}
+.main-overview-list__title h2 {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* main-site-list */
+.main-site-list {
+  position: relative;
+}
+.main-site-list label {
+  background-color: white;
+  width: 220px;
+  height: 33px;
+  padding: 0px 14px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-sort-down {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.main-site-list input {
+  display: none;
+}
+.main-site-list label:hover {
+  cursor: pointer;
+}
+
+.main-site-list input:checked ~ li {
+  display: flex;
+}
+
+.main-site-list li:last-child {
+  font-size: 13px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 174px;
+  padding-left: 14px;
+  box-sizing: border-box;
+  position: absolute;
+  display: none;
+}
+.main-site-list li:last-child a {
+  line-height: 28px;
+}
+
+/* main-footer */
+.main-footer-wrap {
+  height: 340px;
+  background-color: #f2f2f2;
+  padding: 7px 20px 29px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.main-footer-info {
+  font-size: 11px;
+  color: #919191;
+  word-spacing: 1px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.main-footer-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-footer-title img {
+  width: 100px;
+  height: 20px;
+}
+.main-footer-info-list {
+  margin-top: 22px;
+  margin-bottom: 24px;
+}
+.main-footer-info-list li {
+  margin-right: 5px;
+}
+
+.main-footer-info-list a {
+  border: 1px solid var(--border);
+  font-size: 11px;
+  color: #919191;
+  padding: 5px 5px 3px 5px;
+}
+
+.main-footer-sns-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.main-footer-sns-list li {
+  margin-right: 20px;
+}
+
+.main-footer-sns-list li i {
+  color: #aaaaaa;
+  font-size: 19px;
+}
+
+.main-footer-sns-list li .fa-instagram {
+  font-size: 24px;
+}
+.main-footer-disclaimer {
+  font-size: 11px;
+  color: #919191;
+  word-spacing: 1px;
+  margin-bottom: 13px;
+}
+
+.main-footer-disclaimer + p {
+  font-size: 11px;
+  color: #919191;
+  word-spacing: 1px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+
+.main-footer-disclaimer ~ a {
+  font-size: 11px;
+  color: #919191;
+  border: 1px solid var(--border);
+  padding: 5px 5px 3px 5px;
+}
+
+/* award */
+
+.award-wrap {
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+.award-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #919191;
+  margin-top: 10px;
+}
+.award-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.award-list h3 {
+  color: #919191;
+  text-align: center;
+  line-height: 13px;
+  margin-top: 6px;
+}
+
+.btn-top {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 2px rgb(208, 208, 208);
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  right: calc(50% - 365px);
+  bottom: 70px;
+}
+.btn-top a {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+.btn-top a i {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.btn-top a h3 {
+  font-size: 12px;
+}
+
 .today-discount {
   display: flex;
   justify-content: center;
@@ -1278,11 +1510,11 @@
   align-items: center;
 }
 
-footer {
+/* footer {
   background-color: white;
   padding-left: 20px;
   padding-bottom: 50px;
-}
+} */
 
 .footer-title {
   margin-bottom: 15px;

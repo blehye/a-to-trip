@@ -1,20 +1,33 @@
+.nav {
+  height: 50px;
+  border-top: 1px solid rgba(185, 182, 182, 0.5);
+  display: flex;
+  justify-content: center;
+  background-color: white;
+
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
 .nav__list {
+  width: 770px;
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
-  border-top: 1px solid rgba(185, 182, 182, 0.5);
+
+  padding: 2px 20px;
+  box-sizing: border-box;
 }
 
 .nav__btn a i {
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 22px;
+  margin-bottom: 4px;
 }
 .nav__btn a:hover {
   color: var(--violet);
 }
 
 .nav__btn a span {
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .nav__link {
@@ -25,11 +38,23 @@
   color: rgb(157, 156, 156);
   padding: 5px 15px;
 }
-
-.nav {
-  background-color: white;
-
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
+.zzim-btn {
+  position: relative;
+}
+.zzim-btn i {
+}
+.zzim-new {
+  width: 10px;
+  height: 10px;
+  font-size: 9px;
+  background-color: var(--violet);
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 7px;
+  top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
 }
