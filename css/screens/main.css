@@ -330,9 +330,16 @@ html {
   position: relative;
   border-radius: 9px;
   margin-bottom: 10px;
-  background-image: url(../../images/discount1.jpg);
-  background-size: cover;
-  box-shadow: 0 -45px 30px 5px rgba(0, 0, 0, 0.8) inset;
+  /* background-image: url(../../images/discount1.jpg); */
+
+  /* background-size: cover; */
+}
+
+.main-att-live-list__main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 .main-att-live-list__main-runtime {
   position: absolute;
@@ -372,6 +379,9 @@ html {
   padding: 7px;
   font-family: gothic200;
   bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .main-att-live-list__main img {
@@ -749,10 +759,25 @@ html {
   position: relative;
   border-radius: 5px;
   margin-bottom: 10px;
-  background-image: url(../../images/e1.jpg);
+
   background-size: cover;
 
   box-shadow: 0 -45px 30px 5px rgba(0, 0, 0, 0.8) inset;
+}
+.main-exhibition-list li:nth-child(1) .main-exhibition-list-wrapper {
+  background-image: url(../../images/e1.jpg);
+}
+.main-exhibition-list li:nth-child(2) .main-exhibition-list-wrapper {
+  background-image: url(../../images/e2.jpg);
+}
+.main-exhibition-list li:nth-child(3) .main-exhibition-list-wrapper {
+  background-image: url(../../images/e3.jpg);
+}
+.main-exhibition-list li:nth-child(4) .main-exhibition-list-wrapper {
+  background-image: url(../../images/e4.jpg);
+}
+.main-exhibition-list li:nth-child(5) .main-exhibition-list-wrapper {
+  background-image: url(../../images/e5.jpg);
 }
 
 .main-exhibition-list li > a > img {
@@ -974,9 +999,22 @@ html {
   width: 208px;
   height: 208px;
   border-radius: 5px;
-  background-image: url(../../images/discount1.jpg);
+
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.8) 0px -50px 36px -28px inset;
+}
+
+.main-travel-info-list li:nth-child(1) .main-travel-info-list-wrapper {
+  background-image: url(../../images/t1.png);
+}
+.main-travel-info-list li:nth-child(2) .main-travel-info-list-wrapper {
+  background-image: url(../../images/t2.png);
+}
+.main-travel-info-list li:nth-child(3) .main-travel-info-list-wrapper {
+  background-image: url(../../images/t3.png);
+}
+.main-travel-info-list li:nth-child(4) .main-travel-info-list-wrapper {
+  background-image: url(../../images/t4.png);
 }
 .main-travel-info-list__title {
   display: flex;
