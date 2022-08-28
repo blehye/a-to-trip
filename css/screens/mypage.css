@@ -9,7 +9,7 @@
 }
 
 .user-nick-info {
-  width: 70%;
+  width: 80%;
   padding-left: 30px;
   padding-top: 30px;
 }
@@ -33,7 +33,7 @@
 }
 
 .user-img {
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@
   padding: 4px;
   box-shadow: 0 0 5px gray;
   position: absolute;
-  right: 25px;
+  right: 30px;
   bottom: 17px;
 }
 
@@ -123,13 +123,25 @@
   padding-top: 40px;
 }
 
-.mypage-main,
-.mypage-qna,
+.mypage-main {
+  color: black;
+  font-family: gothic300;
+  background-color: white;
+  padding: 30px 20px 10px 20px;
+}
+
+.mypage-qna {
+  color: black;
+  font-family: gothic300;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+}
+
 .mypage-etc {
   color: black;
   font-family: gothic300;
   background-color: white;
-  padding: 20px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .mypage-main > h3,
@@ -146,9 +158,16 @@
 .mypage-list li > i {
   color: darkgray;
 }
-
+.etc {
+  color: black;
+  font-family: gothic300;
+  background-color: white;
+  padding: 10px 20px 100px 20px;
+}
 .mypage-hr {
-  color: gray;
+  background-color: rgba(128, 128, 128, 0.3);
+  height: 1px;
+  border: 0;
 }
 
 .mypage-info {

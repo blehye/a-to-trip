@@ -1,3 +1,7 @@
+.search-body {
+  height: 70vh;
+}
+
 .search-nav {
   display: flex;
   padding-top: 30px;
@@ -33,7 +37,7 @@
   display: flex;
   justify-content: center;
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   background-color: white;
   position: relative;
 }
@@ -72,7 +76,7 @@
 .input-search-section:last-child {
   display: flex;
   justify-content: flex-start;
-  padding-left: 17px;
+  padding-left: 45px;
   padding-bottom: 25px;
 
   background-color: white;
@@ -89,8 +93,8 @@
   background-color: white;
   color: black;
   padding-top: 20px;
-  padding-bottom: 2524px;
-  padding-left: 30px;
+  padding-bottom: 350px;
+  padding-left: 45px;
 }
 
 .popular-search__title {

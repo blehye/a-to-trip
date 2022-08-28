@@ -11,104 +11,106 @@
       href="./images/KakaoTalk_20220824_004316222.png"
     />
   </head>
-  <body>
-    <header class="nearby-header">
-      <div class="nearby-search">
-        <div class="nearby-search-location">
-          <i class="fa-solid fa-map-location"></i>
-          <span>장소 검색</span>
+  <body class="body-color nearby-body">
+    <div class="main-container white">
+      <header class="nearby-header">
+        <div class="nearby-search">
+          <div class="nearby-search-location">
+            <i class="fa-solid fa-map-location"></i>
+            <span>장소 검색</span>
+          </div>
+          <div class="nearby-search-date">
+            <i class="fa-regular fa-calendar"></i>
+            <span>08.24-08.25 2명</span>
+          </div>
         </div>
-        <div class="nearby-search-date">
-          <i class="fa-regular fa-calendar"></i>
-          <span>08.24-08.25 2명</span>
-        </div>
-      </div>
 
-      <section class="nearby-type">
-        <label class="nearby-lodging" for="nearby-lodging"
-          ><i class="fa-solid fa-house"></i>숙소</label
-        >
-        <input id="nearby-lodging" type="checkbox" />
+        <section class="nearby-type">
+          <input id="nearby-lodging" type="checkbox" />
+          <label class="nearby-lodging" for="nearby-lodging"
+            ><i class="fa-solid fa-house"></i>숙소</label
+          >
 
-        <span> <i class="fa-solid fa-cable-car"></i>레저/티켓</span>
+          <span> <i class="fa-solid fa-cable-car"></i>레저/티켓</span>
 
-        <span> <i class="fa-solid fa-bowl-food"></i>맛집</span>
-        <span class="nearby-type-reset">선택초기화</span>
+          <span> <i class="fa-solid fa-bowl-food"></i>맛집</span>
+          <span class="nearby-type-reset">선택초기화</span>
 
-        <nav id="nearby-search-nav">
-          <ul>
-            <li>필터</li>
-            <li>추천순</li>
-            <li>숙소유형</li>
-            <li>예약가능</li>
-            <li>가격</li>
-          </ul>
-        </nav>
+          <nav id="nearby-search-nav">
+            <ul>
+              <li>필터</li>
+              <li>추천순</li>
+              <li>숙소유형</li>
+              <li>예약가능</li>
+              <li>가격</li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <section class="nearby-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3079474102506!2d127.03136522064855!3d37.50065447217731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3fe39a5344d%3A0xe6679c695d833535!2z7Jet7IK87JetKDLtmLjshKAp!5e0!3m2!1sko!2skr!4v1661353296115!5m2!1sko!2skr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
-    </header>
-    <section class="nearby-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3079474102506!2d127.03136522064855!3d37.50065447217731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3fe39a5344d%3A0xe6679c695d833535!2z7Jet7IK87JetKDLtmLjshKAp!5e0!3m2!1sko!2skr!4v1661353296115!5m2!1sko!2skr"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-    <main class="zzim-main">
-      <ul class="zzim-list">
-        <li class="zzim-detail">
-          <div class="zzim-level">4성급·호텔</div>
-          <div class="zzim-name">롯데시티호텔 명동</div>
-          <div class="zzim-address">9.5 (1,721)·을지로3가역 도보 3분</div>
-          <div class="zzim-img">
-            <div><img src="./images/discount1.jpg" alt="" /></div>
-            <div>
-              <div class="zzim-discount">55% <s>330,000</s></div>
-              <span class="zzim-price">148,500</span>
+      <main class="zzim-main">
+        <ul class="zzim-list">
+          <li class="zzim-detail">
+            <div class="zzim-level">모텔</div>
+            <div class="zzim-name">역삼 호텔 디 아티스트</div>
+            <div class="zzim-address">9.5 (1,721)·역삼역 도보 5분</div>
+            <div class="zzim-img">
+              <div><img src="./images/w1.jpg" alt="" /></div>
+              <div>
+                <div class="zzim-discount">5% <s>80,000</s></div>
+                <span class="zzim-price">76,000</span>
+              </div>
             </div>
-          </div>
-          <div class="zzim-tag">
-            <div class="zzim-tag-detail">#연박특가</div>
-            <div class="zzim-tag-detail">#연박특가</div>
-            <div class="zzim-tag-detail">#연박특가</div>
-          </div>
-        </li>
-        <li class="zzim-detail">
-          <div class="zzim-level">4성급·호텔</div>
-          <div class="zzim-name">롯데시티호텔 명동</div>
-          <div class="zzim-address">9.5 (1,721)·을지로3가역 도보 3분</div>
-          <div class="zzim-img">
-            <div><img src="./images/discount1.jpg" alt="" /></div>
-            <div>
-              <div class="zzim-discount">55% <s>330,000</s></div>
-              <span class="zzim-price">148,500</span>
+            <div class="zzim-tag">
+              <div class="zzim-tag-detail">#연박특가</div>
+              <div class="zzim-tag-detail">#미리예약</div>
+              <div class="zzim-tag-detail">#커플PC</div>
             </div>
-          </div>
-          <div class="zzim-tag">
-            <div class="zzim-tag-detail">#연박특가</div>
-            <div class="zzim-tag-detail">#연박특가</div>
-            <div class="zzim-tag-detail">#연박특가</div>
-          </div>
-        </li>
-        <li class="zzim-detail">
-          <div class="zzim-level">4성급·호텔</div>
-          <div class="zzim-name">롯데시티호텔 명동</div>
-          <div class="zzim-address">9.5 (1,721)·을지로3가역 도보 3분</div>
-          <div class="zzim-img">
-            <div><img src="./images/discount1.jpg" alt="" /></div>
-            <div>
-              <div class="zzim-discount">55% <s>330,000</s></div>
-              <span class="zzim-price">148,500</span>
+          </li>
+          <li class="zzim-detail">
+            <div class="zzim-level">모텔</div>
+            <div class="zzim-name">역삼 브라운도트</div>
+            <div class="zzim-address">9.7 (241)·역삼역 도보 7분</div>
+            <div class="zzim-img">
+              <div><img src="./images/w2.jpg" alt="" /></div>
+              <div>
+                <div class="zzim-discount">6% <s>90,000</s></div>
+                <span class="zzim-price">85,000</span>
+              </div>
             </div>
-          </div>
-          <div class="zzim-tag">
-            <div class="zzim-tag-detail">#연박특가</div>
-            <div class="zzim-tag-detail">#연박특가</div>
-            <div class="zzim-tag-detail">#연박특가</div>
-          </div>
-        </li>
-      </ul>
-    </main>
+            <div class="zzim-tag">
+              <div class="zzim-tag-detail">#연박특가</div>
+              <!-- <div class="zzim-tag-detail">#연박특가</div>
+              <div class="zzim-tag-detail">#연박특가</div> -->
+            </div>
+          </li>
+          <li class="zzim-detail">
+            <div class="zzim-level">3성급·호텔</div>
+            <div class="zzim-name">신라스테이 역삼</div>
+            <div class="zzim-address">9.1 (1,013)·역삼역 도보 10분</div>
+            <div class="zzim-img">
+              <div><img src="./images/w3.jpg" alt="" /></div>
+              <div>
+                <div class="zzim-discount">63% <s>330,000</s></div>
+                <span class="zzim-price">122,000</span>
+              </div>
+            </div>
+            <div class="zzim-tag">
+              <div class="zzim-tag-detail">#연박특가</div>
+              <div class="zzim-tag-detail">#반나절호캉스</div>
+              <!-- <div class="zzim-tag-detail">#연박특가</div> -->
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
 
     <nav class="nav">
       <ul class="nav__list">
